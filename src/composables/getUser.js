@@ -4,7 +4,7 @@ import { projectAuth } from '../firebase/config'
 const user = ref(projectAuth.currentUser)
 
 projectAuth.onAuthStateChanged(_user => {
-  console.log('user state change. Current user is: ', _user)
+  console.log('Zmiana statusu użytkownika. Obecny użytkownik to: ', _user)
   user.value = _user
 })
 

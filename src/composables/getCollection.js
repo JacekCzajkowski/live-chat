@@ -18,7 +18,7 @@ const getCollection = (collection) => {
   }, (err) => {
     console.log(err.message)
     documents.value = null
-    error.value = 'could not fetch data'
+    error.value = 'Nie można pobrać danych'
   })
 
   watchEffect((onInvalidate) => {

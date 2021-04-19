@@ -1,15 +1,15 @@
 <template>
   <div class="welcome container">
-    <p>Welcome</p>
+    <p>Favweb live-chat</p>
     <div v-if="showLogin">
       <h2>Login</h2>
       <LoginForm @login="enterChat" />
-      <p>No account yet? <span @click="showLogin = false">Signup</span> instead</p>
+      <p>Nie masz jeszcze konta? <span @click="showLogin = false">Rejestracja</span> konta</p>
     </div>
     <div v-else>
-      <h2>Sign up</h2>
+      <h2>Nowe konto</h2>
       <SignupForm @signup="enterChat" />
-      <p>Already registered? <span @click="showLogin = true">Login</span> instead</p>
+      <p>Masz juz konto? <span @click="showLogin = true">Zaloguj</span> się</p>
     </div>
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
     margin: 20px 0 10px;
   }
   .welcome input {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border-radius: 20px;
     border: 1px solid #eee;
