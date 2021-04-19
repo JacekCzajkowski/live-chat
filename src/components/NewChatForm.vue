@@ -1,7 +1,7 @@
 <template>
   <form>
     <textarea 
-      placeholder="Type a message and hit enter to send..."
+      placeholder="Napisz wiadomość i naciśnij enter..."
       v-model="message"
       @keypress.enter.prevent="handleSubmit"
     ></textarea>
